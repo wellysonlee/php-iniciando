@@ -28,5 +28,11 @@ function sacar(array $conta, float $valorASacar): array
 // função de exibir mensagem padrão
 function exibeMensagem(string $mensagem)
 {
-    echo $mensagem . PHP_EOL;
+    echo $mensagem . '<br>';
+}
+
+function exibeConta (array $conta)
+{
+    ['titular'=> $titular, 'saldo' => $saldo] = $conta;
+    echo "<li> Titular: $titular. Saldo: $saldo</li>";
 }

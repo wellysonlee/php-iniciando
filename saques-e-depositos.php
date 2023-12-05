@@ -32,6 +32,25 @@ $contasCorrentes['864.844.265-83'] = depositar(
     900
 );
 
-foreach ($contasCorrentes as $cpf => $conta) {
-    exibeMensagem($cpf . " " . $conta['titular'] . ' ' . $conta['saldo']);
-}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contas correntes</h1>
+
+    <dl>
+        <?php foreach($contasCorrentes as $cpf => $conta) { ?>
+        <dt>
+            <h3><?= $conta['titular']; ?> - <?= $cpf; ?></h3>
+        </dt>
+        <dd>Saldo: <?= $conta['saldo']; ?></dd>
+        <?php } ?>
+    </dl>
+
+</body>
+</html>
