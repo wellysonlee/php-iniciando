@@ -20,4 +20,4 @@ echo substr($email, $posicaoArroba + 1).PHP_EOL;
 list($nome, $sobrenome) = explode(' ', $nome);
 
 echo 'Nome: '.$nome.PHP_EOL;
-ECHO 'Sobrenome: '.$sobrenome.PHP_EOL; 
+echo 'Sobrenome: '.$sobrenome.PHP_EOL; 
